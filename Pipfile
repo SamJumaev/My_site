@@ -9,6 +9,7 @@ gunicorn = "*"
 whitenoise = "*"
 gitpython = "*"
 python-git = "*"
+pillow = "*"
 
 [dev-packages]
 

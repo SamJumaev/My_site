@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-gyas9r77gik=b+sfkz&)8xfdkm#pxsl!w5s=ppjs!0d-z6zixb
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["my-site-sj.herokuapp.com"]
+ALLOWED_HOSTS = ["my-site-sj.herokuapp.com", "127.0.0.1"]
 
 
 # Application definition
@@ -133,7 +133,7 @@ EMAIL_USE_TLS = False
 EMAIL_USE_SSL = True
 
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static')
+    os.path.join(BASE_DIR, '/static/'),
 )
 
 # Default primary key field type
