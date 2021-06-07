@@ -5,7 +5,7 @@ from django.core.mail import send_mail
 
 
 def index(request):
-    # form = ContactMeForm
+    form = ContactMeForm()
     user = User.objects.get(id=1)
     user_skills = user.skills.all()
     about = About.objects.get(id=1)
