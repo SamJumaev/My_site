@@ -2,7 +2,7 @@ from django.db import models
 
 
 class User(models.Model):
-    image = models.ImageField(upload_to="pictures", blank=True)
+    image = models.ImageField(upload_to="pictures")
     name = models.CharField(max_length=200)
     short_description = models.CharField(max_length=500)
     skills = models.ManyToManyField('Skills')
