@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class User(models.Model):
     image = models.ImageField(upload_to="pictures", blank=True)
     name = models.CharField(max_length=200)
