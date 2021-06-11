@@ -7,7 +7,7 @@ from django.core.mail import send_mail
 def index(request):
     form = ContactMeForm
     user = User.objects.get()
-    user_skills = Skills.get.all()
+    user_skills = Skills.objects.all()
     about = About.objects.get()
     accomplishments = Accomplishments.objects.all()
     if request.method == 'POST':
